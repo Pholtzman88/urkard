@@ -1,0 +1,36 @@
+.music-container
+{
+    background-image: url('../images/musicPageBackground.png');
+    background-repeat: no-repeat;
+    margin-left: 600px;
+    margin-right: 300px;
+}
+
+@media (max-width: 2000px)
+{
+    .music-container
+    {
+        margin: 0;
+    }
+}
+
+.music-title
+{
+    text-align: center;
+    color: #F7951E;
+    font-size: 48px;
+}
+
+.music-first-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 750px)
+{
+    .music-first-row
+    {
+        flex-direction: column;
+    }
+}

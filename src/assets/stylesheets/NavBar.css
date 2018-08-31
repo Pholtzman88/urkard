@@ -1,0 +1,461 @@
+.nav-bar
+{
+    width: 400px;
+    height: 100%;
+    background-color: #3c393d;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo {
+    width: 350px;
+    height: 80px;
+    margin: 15px;
+}
+
+.buffer
+{
+    width: 100%;
+    height: 100px;
+}
+
+.nav-bar ul
+{
+   text-align: center;
+}
+
+.nav-bar ul li
+{
+    display: block;
+    height: 150px;
+    padding: 0 20px;
+}
+
+.nav-download-btns
+{
+    margin-top: 150px;
+}
+.side-nav-faq
+{
+    position: absolute;
+    left: 2220px;
+    bottom: 1100px;
+}
+
+.responsive-bar
+{
+    display: none;
+
+}
+
+
+.link-title
+{
+    color: #7d8f9d;
+    font-size: 32px;
+}
+
+button:focus
+{
+    outline: none
+}
+
+.link-btn
+{
+    opacity: 0;
+    position: relative;
+    background: transparent;
+    color: #7D8F9D;
+    text-align: center;
+    border: none;
+    width: 80%;
+    height: 100%;
+    animation: fade-in_top 1s ease-in forwards;
+}
+
+.link-btn:hover{
+    cursor: pointer;
+}
+
+
+#btn-1{
+    animation-delay: .5s;
+}
+
+#btn-1:hover{
+    border-bottom: 2px solid #FE7F01;
+    color: #FE7F01;
+
+}
+
+#btn-2{
+    animation-delay: 1s;
+}
+
+#btn-2:hover{
+    border-bottom: 2px solid #FE7F01;
+    color: #FE7F01;
+
+}
+
+#btn-3{
+    animation-delay: 1.5s;
+}
+
+#btn-3:hover{
+    border-bottom: 2px solid #FE7F01;
+    color: #FE7F01;
+}
+
+#btn-4{
+    animation-delay: 2s;
+}
+#btn-4:hover{
+    border-bottom: 2px solid #FE7F01;
+    color: #FE7F01;
+
+}
+
+#btn-5{
+    animation-delay: 2.5s;
+    border: 2px solid #FE7F01;
+    border-radius: 15px;
+    color: #FE7F01
+}
+#btn-5:hover{
+    background: #FE7F01;
+    border-color: white;
+    color: #fff;
+}
+
+@keyframes underline-link {
+    from {
+        transform: translateX(0px)
+    }
+    to {
+        transform: translateX(300px)
+    }
+}
+
+@keyframes fade-in_top{
+    from{
+        transform: translateY(-60px);
+        opacity: 0;
+    }to{
+         transform: translateY(0);
+         opacity: 1;
+     }
+}
+
+
+
+
+
+
+@media (max-width: 2000px)
+{
+    .nav-bar
+    {
+        width: 100%;
+        height: 100px;
+    }
+
+    .nav-bar ul
+    {
+        float: right;
+        margin-top: 10px;
+        margin-right: 20px;
+        height: 80px;
+    }
+
+    .nav-bar ul li
+    {
+        display: inline-block;
+        height: 100%;
+        width: 75px;
+    }
+
+    .nav-bar ul li:nth-child(6)
+    {
+        display: none;
+    }
+
+    .link-btn
+    {
+        padding: 10px;
+        width: 100px;
+    }
+
+    .link-title
+    {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .footer-container
+    {
+        z-index: 1;
+    }
+
+    .responsive-bar
+    {
+        display: block;
+        width: 100%;
+        height: 80px;
+        background-color: #3c393d;
+        position: fixed;
+        z-index: 2001;
+        border-bottom: 5px solid #222222;
+    }
+
+
+    .nav-bar
+    {
+        margin-top: 75px;
+        background-color: transparent;
+    }
+    .nav-bar .logo
+    {
+        display: none;
+    }
+
+    .responsive-bar .logo
+    {
+        width: 220px;
+        height: 50px;
+    }
+
+    .burger-menu
+    {
+        float: right;
+        width: 50px;
+        height: calc(100% - 10px);
+        margin: 20px;
+    }
+
+    .menu{
+        background-color: #222;
+        width: 75%;
+        height: 5px;
+        margin: 5px 12.5%;
+        display: block;
+        border-radius: 30px;
+        transition: all .5s;
+    }
+
+    .nav-bar ul{
+        float: none;
+        text-align: center;
+        margin:0;
+        width: 100%;
+        position: relative;
+        bottom: 1500px;
+    }
+
+    .nav-bar ul li{
+        display: block;
+        border-bottom: 2px solid #fff;
+        background-color: #222222;
+        margin:0;
+        padding: 0;
+        height: 100px;
+        width: 100%;
+        z-index: 2001;
+    }
+    .link-title
+    {
+        color: #bdbdbd;
+        font-size: 32px;
+    }
+    .active
+    {
+        animation: scrollDownMenu .5s ease forwards;
+    }
+
+    .top
+    {
+        animation: animateTopOnClose .3s forwards;
+    }
+
+    .middle
+    {
+        animation: animateMiddleOnClose .5s forwards;
+    }
+
+    .bottom
+    {
+        animation: animateBottomOnClose .3s forwards;
+    }
+
+    .top-active
+    {
+        margin-top: 15px;
+        animation: animateTopOnOpen .5s forwards;
+    }
+
+    .middle-active
+    {
+        display: none;
+    }
+
+    .bottom-active
+    {
+        animation: animateBottomOnOpen .5s forwards;
+    }
+
+    @keyframes animateTopOnClose {
+        0%{
+            transform: translateY(10px) rotateZ(-45deg);
+        }
+        80% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(0px) rotateZ(0deg);
+        }
+    }
+
+    @keyframes animateTopOnOpen {
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(5px) rotateZ(-180deg);
+        }
+        100%{
+            transform: translateY(5px) rotateZ(-45deg);
+        }
+    }
+
+    @keyframes animateBottomOnOpen {
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-5px) rotateZ(180deg);
+        }
+        100%{
+            transform: translateY(-5px) rotateZ(45deg);
+        }
+    }
+
+    @keyframes animateMiddleOnClose {
+        0%{
+            opacity: 0;
+        }
+        20%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes animateBottomOnClose {
+        0%{
+            transform: translateY(-10px) rotateZ(45deg);
+        }
+        80% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0px) rotateZ(0deg);
+        }
+    }
+
+    .inactive
+    {
+        animation: scrollUpMenu 1s ease forwards;
+    }
+
+    .nav-btn
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .link-btn
+    {
+        position: relative;
+        top:0;
+        background: transparent;
+        color: #7D8F9D;
+        text-align: center;
+        border: none;
+        padding: 0;
+        transform: translateY(0);
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-bar ul li:hover
+    {
+        background-color: #F8951E;
+    }
+
+    #btn-5:hover
+    {
+        background: none;
+        border: none;
+        background-color: #F8951E;
+    }
+
+    #btn-1:hover
+    {
+        border: none;
+    }
+    #btn-2:hover
+    {
+        border: none;
+    }
+    #btn-3:hover
+    {
+        border: none;
+    }
+    #btn-4:hover
+    {
+        border: none;
+    }
+    #btn-5
+    {
+        background: transparent;
+        border-color: transparent;
+    }
+
+    @keyframes scrollDownMenu {
+        0%{
+            top: -1500px;
+        }
+        100% {
+            top: 0;
+        }
+    }
+
+    @keyframes scrollUpMenu {
+        0%{
+            top: 0;
+        }
+        100% {
+            top: -1500px;
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0
+        }
+        100% {
+            opacity: 1
+        }
+    }
+}
+
+@media (max-width: 350px)
+{
+    .responsive-bar .logo
+    {
+        width: 150px;
+    }
+}

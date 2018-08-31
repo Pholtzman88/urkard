@@ -1,0 +1,14 @@
+.social-media-buttons-wrapper
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    margin-left: calc(50% - 150px);
+    margin-bottom: 75px;
+}
+
+.social-media-button-container
+{
+    margin: 100px 0 0 25px;
+}

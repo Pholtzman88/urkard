@@ -1,0 +1,26 @@
+{
+  "name": "urkard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.6.5",
+    "react-responsive-modal": "^2.0.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

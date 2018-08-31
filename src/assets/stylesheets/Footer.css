@@ -1,0 +1,92 @@
+.footer-container
+{
+    width: 100%;
+    background-image: url("../images/footerBackground.jpg");
+    background-size: cover;
+    z-index: 2000;
+    position: absolute;
+    border-top: 50px solid #3C393D;
+    display: none;
+}
+
+.FAQBtn:hover
+{
+    cursor: pointer;
+}
+
+.download-btn
+{
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+}
+
+@media (max-width: 2000px)
+{
+    .footer-container
+    {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+
+    .footer-info
+    {
+        flex: 5;
+        -webkit-flex: 5;
+    }
+    .social-media-container
+    {
+        flex: 1;
+        -webkit-flex: 1;
+    }
+
+    .info-container
+    {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+    }
+    .download-container
+    {
+        flex: 1;
+        -webkit-flex: 1;
+        padding-top: 150px;
+    }
+
+    .faq-container
+    {
+        flex: 1;
+        -webkit-flex: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-container {
+        z-index: 1;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .info-container
+    {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .download-btn
+    {
+        float: left;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .download-btn
+    {
+        float: none;
+        margin: 10px ;
+    }
+}

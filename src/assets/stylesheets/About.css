@@ -1,0 +1,112 @@
+.container
+{
+margin-bottom: 30px;
+}
+
+.title
+{
+    color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.description
+{
+    color: #f5f5f5;
+    line-height: 1.25;
+    margin-bottom: 100px;
+    font-size: 32px;
+    text-indent: 20px;
+}
+
+
+.joining-flip-card
+{
+    color: #f5f5f5;
+    line-height: 1.25;
+}
+.joining-flip-card p
+{
+    font-size: 32px;
+    text-indent: 100px;
+    margin-bottom: 50px;
+
+}
+
+.joining-flip-card ul li
+{
+    font-size: 32px;
+    margin-left: 200px;
+}
+
+.front ul li:nth-child(1)
+{
+    list-style-image: url("../images/kidprintbullet.png");
+}
+
+.front ul li:nth-child(2)
+{
+    list-style-image: url("../images/medtag.png");
+}
+
+.front ul li:nth-child(3)
+{
+    list-style-image: url("../images/autism.png");
+}
+
+.front ul li:nth-child(4)
+{
+    list-style-image: url("../images/urpet.png");
+}
+
+
+@media (max-width: 2000px)
+{
+
+    .title
+    {
+        font-size: 18px;
+    }
+    .description
+    {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .joining-flip-card p
+    {
+        font-size: 18px;
+        text-indent: 20px;
+    }
+
+    .joining-flip-card ul li
+    {
+        font-size: 16px;
+        margin: 30px 100px;
+    }
+    .joining-flip-card ul
+    {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-height: 768px )
+{
+    .about-container
+    {
+        margin: 0;
+    }
+}
+
+@media (max-width: 850px)
+{
+
+    .joining-flip-card ul li
+    {
+        margin: 5px 5px 5px 90px;
+    }
+    .about-container
+    {
+        margin: 0;
+    }
+}
